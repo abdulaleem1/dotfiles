@@ -115,7 +115,7 @@ source $ZSH/oh-my-zsh.sh
 # [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 
-export NVIM_APPNAME="kick-start-nvim"
+export NVIM_APPNAME="astro-nvim"
 
 PATH=${PATH}:$HOME/bin
 export PATH
@@ -143,3 +143,7 @@ eval "$(pyenv init -)"
 
 
 eval "$(starship init zsh)"
+
+
+export GOPATH="$HOME/go"
+export PATH="$GOPATH/bin:$PATH"
