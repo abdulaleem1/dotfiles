@@ -142,3 +142,5 @@ esac
 alias nvim='NVIM_APPNAME="astronvim" command nvim'
 
 bind -x '"\C-f":tmux-sessionizer'
+
+eval "$(starship init bash)"
