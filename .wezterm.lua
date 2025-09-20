@@ -10,4 +10,11 @@ wezterm.on("gui-startup", function()
 	window:gui_window():toggle_fullscreen()
 end)
 
+config.window_padding = {
+	left = 2,
+	right = 2,
+	top = 0,
+	bottom = 0,
+}
+
 return config
