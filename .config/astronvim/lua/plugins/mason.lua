@@ -1,9 +1,18 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+--if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 
 -- Customize Mason
 
 ---@type LazySpec
 return {
+  {
+    "mason-org/mason.nvim",
+    opts = {
+      registries = {
+        "github:mason-org/mason-registry",
+        "github:Crashdummyy/mason-registry",
+      },
+    },
+  },
   -- use mason-tool-installer for automatically installing Mason packages
   {
     "WhoIsSethDaniel/mason-tool-installer.nvim",
@@ -22,6 +31,9 @@ return {
 
         -- install any other package
         "tree-sitter-cli",
+        "roslynv4",
+        "angular-language-server",
+        "typescript-language-server",
       },
     },
   },

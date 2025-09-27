@@ -137,10 +137,20 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+#
+export DOTNET_ROLL_FORWARD=LatestMajor
+export PATH="$PATH:/home/absyed/bash-scripts"
 
 # $NVIM_APPNAME defaults to nvim
 alias nvim='NVIM_APPNAME="astronvim" command nvim'
 
-bind -x '"\C-f":tmux-sessionizer'
+bind -x '"\C-f":~/bash-scripts/tmux-sessionizer'
+bind 'set show-all-if-ambiguous on'
+bind 'TAB:menu-complete'
 
 eval "$(starship init bash)"
+eval "$(zoxide init bash)"
+
+
+
+
